@@ -17,13 +17,13 @@ let prezzoFinale;
 
 // CONDIZIONI
 if (etaPasseggero < 18) {
-    prezzoFinale = (prezzoPasseggero - scontoMinor + "€");
+    prezzoFinale = ((prezzoPasseggero - scontoMinor).toFixed(2) + "€");
     console.log(`Perfetto, dopo aver svolto le dovute verifiche, ti comunichiamo che essendo minorenne sul tuo biglietto è applicato uno sconto del 20% e di conseguenza per la tua tratta il costo finale del biglietto è pari a ${prezzoFinale}`);
 } else if (etaPasseggero > 65) {
-    prezzoFinale = (prezzoPasseggero - scontoOver + "€");
+    prezzoFinale = ((prezzoPasseggero - scontoOver).toFixed(2) + "€");
     console.log(`Perfetto, dopo aver svolto le dovute verifiche, le comunichiamo che essendo over 65 sul suo biglietto è applicato uno sconto del 40% e di conseguenza per la vostra tratta il costo finale del biglietto è pari a ${prezzoFinale}`);
 } else {
-    prezzoFinale = (prezzoPasseggero + "€");
+    prezzoFinale = (prezzoPasseggero.toFixed(2) + "€");
     console.log(`Perfetto, dopo aver svolto le dovute verifiche, ti comunichiamo che il per la tua tratta il costo del biglietto è pari a ${prezzoFinale}`);
 }
 
