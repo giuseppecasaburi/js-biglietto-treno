@@ -1,10 +1,22 @@
 // RACCOLTA INPUT SUI KM DA PERCORRERE DAL PASSEGGERO
 const kmPasseggero = prompt("Benvenuto sul nostro sito, per poter fare un preventivo abbiamo bisogno di sapere quanti km devi percorrere per il tuo viaggio?")
-console.log(parseInt(kmPasseggero));
 
-// RACCOLTA INPUT SULL'ETA' DAL PASSEGGERO
+// VERIFICA CORRETTO INSERIMENTO DATI DA UTENTE
+if (isNaN(kmPasseggero)) {
+    alert("Non hai inserito un valore numerico come richiesto, ti chiediamo di riavviare il programma e seguire correttamente le istruzioni!");
+} else {
+    console.log(parseInt(kmPasseggero));
+}
+
+// RACCOLTA INPUT SULL'ETA' DELL'UTENTE
 const etaPasseggero = prompt("Perfetto, adesso ci servirebbe solo sapere un'altra cosa, quanti anni hai?")
-console.log(parseInt(etaPasseggero));
+
+// VERIFICA CORRETTO INSERIMENTO DATI DA UTENTE
+if (isNaN(etaPasseggero)) {
+    alert("Non hai inserito un valore numerico come richiesto, ti chiediamo di riavviare il programma e seguire correttamente le istruzioni!")
+} else {
+    console.log(parseInt(etaPasseggero));
+}
 
 // CALCOLO COSTO BIGLIETTO
 const prezzoAlKm = 0.21;

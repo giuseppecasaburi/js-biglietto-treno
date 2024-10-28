@@ -26,7 +26,8 @@ sconto per over65: 40%
 4- impostare condizioni: se il passeggero è minorenne applicare uno sconto del 20%, se invece è over 65 applicare uno sconto del 40% oppure stampare semplicemente il prezzo finale.
 5- stampare a schermo l'output.
 
-
+## ESERCIZIO BONUS
+Alla fine del punto uno e del punto due verificare che i dati inseriti dall'utente siano effettivamente dati numerici andando ad interrompere l'avvio del programma e chiedendo all'utente di riavviare e inserire correttamente i dati.
 
 
 
